@@ -1,0 +1,366 @@
+﻿<head><link rel="stylesheet" type="text/css" href="src/app/home/profilepic.css"></head>
+<script src="C:\Users\Akshay Jagadish\2019 workspace\login trial2\angular-7-registration-login-example-master\src\app\home\profilepic.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+    .reggamers
+    {
+        float: right;
+        position:absolute;
+    }
+    .header{
+        position: absolute;
+        top: 10%;
+        left: 40%;
+        z-index: 2;
+    }
+
+    .header div{
+        float: left;
+        color: #fff;
+        font-family: 'Exo', sans-serif;
+        font-size: 35px;
+        font-weight: 200;
+    }
+
+    .header div span{
+        color: #5379fa !important;
+    }
+    .column1 {
+        float: left;
+        margin-left: 3px;
+        width: 90%;
+        padding: 10px;
+        height: 300px;
+        position: absolute;
+        color: black;
+        ;/* Should be removed. Only for demonstration */
+    }
+    .column2 {
+        float: right;
+
+        width: 80%;
+        padding: 10px;
+        height: 300px;
+        position:absolute/* Should be removed. Only for demonstration */
+    }
+    .column3 {
+        float: right;
+        margin-top:300px;
+        width: 80%;
+        padding: 10px;
+        background-color: white;
+        position:relative;
+        height: 500px;
+        color:black;/* Should be removed. Only for demonstration */
+    }
+    img.dota
+    {
+        height:100px;
+        width:200px;
+    }
+    img.csgo
+    {
+        height:100px;
+        width:100px;
+    }
+    img.fortnite
+    {
+        height:100px;
+        width:100px;
+    }
+    .online-column {
+        margin-left: 92%;
+        width: 10%;
+        padding: 10px;
+        height: 900px;
+        position:absolute;
+        /* Should be removed. Only for demonstration */
+    }
+    #navpad {
+        padding-top: 50px;
+    }
+    h2#box {
+        background-color: grey;
+
+        border: 15px solid grey;
+
+    }
+    .container {
+        position: relative;
+        width: 20%;
+
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        height:100px;
+        width:50px;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .container:hover .image {
+        opacity: 0.3;
+    }
+
+    .container:hover .middle {
+        opacity: 1;
+    }
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial;
+        font-size: 17px;
+    }
+
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        opacity:1;
+    }
+
+    .content {
+        position: fixed;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 20%;
+        padding: 20px;
+        margin-left: 0px;
+        height: 93%;
+
+
+    }
+
+    #myBtn {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    #myBtn:hover {
+        background: #ddd;
+        color: black;
+    }
+    .text {
+
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+
+    html,body
+    {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    #Online
+    {
+        color:black;
+        height:700px;
+        position: fixed;
+        margin-top: 50px;
+        margin-left: 15px;
+        right:0;
+
+
+
+    }
+    .scrollable {
+
+        overflow-y: scroll;
+
+    }
+    .column
+    {
+        float:left;
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin-top:10%;
+        margin-left:30%;
+        text-align: center;
+        font-family: arial;
+
+
+    }
+
+    .title {
+        color: grey;
+        font-size: 18px;
+    }
+
+    button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+    }
+
+     .bordered {
+         width: 90px;
+         height: 50px;
+
+         ;
+     }
+    .avatar {
+        vertical-align: middle;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    #steam
+    {
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    button:hover, a:hover {
+        opacity: 0.7;
+    }
+    .header div{
+        float: left;
+        color: #fff;
+        font-family: 'Exo', sans-serif;
+        font-size: 35px;
+        font-weight: 200;
+    }
+
+    .header div span{
+        color: #5379fa !important;
+    }
+    @import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+    @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+</style>
+<body style="font-family: Helvetica">
+<video autoplay muted loop id="myVideo">
+    <source src="src/app/home/y2mate.com - csgo_sniper_montage_zvkBdNk9zHc_1080p.mp4">
+    Your browser does not support HTML5 video.
+</video>
+    <div class="row">
+
+
+        <div id="Online" class="column" class="scrollable" style="background-color:#343a40;">
+            <h4 class="bordered" style="background-color: #343a40; padding-left: 15px; padding-top: 10px;font-family: 'Exo', sans-serif;color: #5379fa !important;">Chat</h4>
+            <div class="user-avatar -large -online-bubble" style="background-image: url('https://source.unsplash.com/random')"></div><br>
+            <div class="user-avatar -large -online-bubble" style="background-image: url('https://source.unsplash.com/random3/100x100/?nature')"></div><br>
+
+
+        </div>
+        <h2 style="text-align:center">User Profile Card</h2>
+
+
+        <div class="content">
+            <h1> {{currentUser.firstName}} {{currentUser.lastName}}</h1>
+
+
+                <img src="src/app/home/WhatsApp Image 2019-04-20 at 11.27.47 PM.jpeg" alt="Avatar" class="avatar">
+            <div class="container" style="margin-right: 1300px; margin-bottom: 10px; width: 900px">
+                <img id="steam" src="src/app/home/download.png" alt="Avatar">
+            Steam id: Killswitch
+            <br>
+            <img id="steam" src="src/app/home/download (1).png" alt="Avatar"> Rank :Pro
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+                <!--<div style="display: inline;">
+                    <h2 style="display: inline; margin-left: 500px">
+                        Favourites
+                    </h2>
+                    <br><br>
+                    <div class="container">
+                        <img src="https://cdn.vox-cdn.com/thumbor/7pam8M9JfbGWAYouPND0d2vCZtY=/0x0:660x360/1200x0/filters:focal(0x0:660x360):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/6645195/dota-2-logo.0.jpg" alt="Avatar" class="image" style="width:100%">
+                        <div class="middle">
+                            <div class="text">Dota 2</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="http://cdn.shopify.com/s/files/1/1158/9490/products/C000016928-PAR-ZOOM_b6e631b8-7192-4c5d-a8b3-9a0736f85cfe_800x.jpg?v=1539401825" alt="Avatar" class="image" style="width:100%">
+                        <div class="middle">
+                            <div class="text">Fortnite</div>
+                        </div>
+                    </div>-->
+
+                    <!--<img class="dota" id="hover" src="https://cdn.vox-cdn.com/thumbor/7pam8M9JfbGWAYouPND0d2vCZtY=/0x0:660x360/1200x0/filters:focal(0x0:660x360):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/6645195/dota-2-logo.0.jpg">
+                        <div class="middle">
+                            <div class="text">Dota 2</div>
+                        </div>
+
+                    <img class="csgo"src="https://ih0.redbubble.net/image.286894373.7375/ap,550x550,16x12,1,transparent,t.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img class="fortnite" src="http://cdn.shopify.com/s/files/1/1158/9490/products/C000016928-PAR-ZOOM_b6e631b8-7192-4c5d-a8b3-9a0736f85cfe_800x.jpg?v=1539401825">-->
+
+
+
+
+
+
+
+<!--<div class="col-md-12" style="background-color: gray">-->
+
+</body>
+
+
+
+
+<!--
+<div class="reggamers">
+<h3>Online:</h3>
+<ul>
+    <li *ngFor="let user of users">
+        {{user.username}} ({{user.firstName}} {{user.lastName}})
+        <div class="user-avatar -large -online-bubble" style="background-image: url('https://source.unsplash.com/random2/100x100/?nature')"></div>
+
+        - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>-->
+   <!-- </li>
+</ul>
+</div>-->

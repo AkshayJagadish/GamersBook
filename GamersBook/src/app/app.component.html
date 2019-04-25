@@ -1,0 +1,212 @@
+﻿<!-- nav -->
+<head>   <meta charset="UTF-8">
+
+    <title>CodePen - Random Login Form</title>
+
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+        @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+        body{
+            margin: 0;
+            padding: 0;
+            background: #fff;
+
+            color: #fff;
+            font-family: Arial;
+            font-size: 12px;
+        }
+
+        .body{
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -40px;
+            bottom: -40px;
+            width: auto;
+            height: auto;
+            background-image: url(https://wallpapers-house.com/data/out/12/wallpaper2you_515465.jpg);
+            background-size: cover;
+            -webkit-filter: blur(5px);
+            z-index: 0;
+        }
+
+        .grad{
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -40px;
+            bottom: -40px;
+            width: auto;
+            height: auto;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+            z-index: 1;
+            opacity: 0.7;
+        }
+
+        .header{
+            position: absolute;
+            top: 10%;
+            left: 40%;
+            z-index: 2;
+        }
+
+        .header div{
+            float: left;
+            color: #fff;
+            font-family: 'Exo', sans-serif;
+            font-size: 35px;
+            font-weight: 200;
+        }
+
+        .header div span{
+            color: #5379fa !important;
+        }
+
+        .login{
+            position: absolute;
+            top: calc(50% - 75px);
+            left: 40%;
+            height: 150px;
+            width: 350px;
+            padding: 10px;
+            z-index: 2;
+
+        }
+
+        .login input[type=text]{
+            width: 250px;
+            height: 30px;
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.6);
+            border-radius: 2px;
+            color: #fff;
+            font-family: 'Exo', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 4px;
+        }
+
+        .login input[type=password]{
+            width: 250px;
+            height: 30px;
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.6);
+            border-radius: 2px;
+            color: #fff;
+            font-family: 'Exo', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 4px;
+
+        }
+
+        .login input[type=button]{
+            width: 260px;
+            height: 35px;
+            background: #fff;
+            border: 1px solid #fff;
+            cursor: pointer;
+            border-radius: 2px;
+            color: #a18d6c;
+            font-family: 'Exo', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 6px;
+            margin-top: 10px;
+        }
+
+        .login input[type=button]:hover{
+            opacity: 0.8;
+        }
+
+        .login input[type=button]:active{
+            opacity: 0.6;
+        }
+
+        .login input[type=text]:focus{
+            outline: none;
+            border: 1px solid rgba(255,255,255,0.9);
+        }
+
+        .login input[type=password]:focus{
+            outline: none;
+            border: 1px solid rgba(255,255,255,0.9);
+        }
+
+        .login input[type=button]:focus{
+            outline: none;
+        }
+
+        ::-webkit-input-placeholder{
+            color: rgba(255,255,255,0.6);
+        }
+
+        ::-moz-input-placeholder{
+            color: rgba(255,255,255,0.6);
+        }
+        #fixed
+        {
+            position: fixed;
+        }
+
+
+        nav {
+            position: fixed;
+            background-color: red;
+            width: 100%;
+            height: 50px;
+            z-index: 10;
+        }
+
+
+
+
+    </style>
+
+    <script src="js/prefixfree.min.js"></script></head>
+<body>
+<nav class="navbar navbar-expand navbar-dark bg-dark"  *ngIf="currentUser">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+
+        <a class="nav-item nav-link" routerLink="/">News</a>
+        <a class="nav-item nav-link" routerLink="/">Gallary</a>
+
+        <a class="nav-item nav-link" routerLink="/">Friends</a>
+        <a class="nav-item nav-link" routerLink="/">Groups</a>
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+        <div class="header">
+            <div>Gamer's<span>book</span></div>
+        </div>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>
+<style>
+    .jumbotron { background: #F5F5DC;
+
+    }
+
+</style>
+<!-- main app container
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <alert></alert>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!-- credits
+<div class="text-center">
+    <p>
+        <a href="http://jasonwatmore.com/post/2018/10/29/angular-7-user-registration-and-login-example-tutorial" target="_top">Angular 7 - User Registration and Login Example & Tutorial</a>
+    </p>
+    <p>
+        <a href="http://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+    </p>
+</div>-->
+</body>
