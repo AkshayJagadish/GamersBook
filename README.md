@@ -5,4 +5,4 @@ Enjoy!
 
 <img src="https://github.com/AkshayJagadish/GamersBook/blob/master/GamersBook/Screenshot%20(136).png">
 
-[![Watch the video](https://raw.githubusercontent.com/AkshayJagadish/Gamers-Book/master/Screenshot%20(43d).png)](https://youtu.be/byRV5OXyNc8)
+[![Watch the video](https://github.com/AkshayJagadish/GamersBook/blob/master/GamersBook/Screenshot%20(43d).png)](https://youtu.be/byRV5OXyNc8)
